@@ -11,7 +11,7 @@ export default function RestApiHooksComponent() {
 
     useEffect(() => {
         axios
-            .get('http://159.89.143.117:3001/raccoon/feelings')
+            .get('https://cors-anywhere.herokuapp.com/http://159.89.143.117:3001/raccoon/feelings')
             .then(result => setData(result.data.feelings));
     }, []);
     return (
